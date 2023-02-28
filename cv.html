@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/cv-style.css" />
+    <title>Proyecto cv Argentina programa</title>
+</head>
+<body>
+    <div class="col-12">
+        <div class="linea">
+                <button type="button" id="boton-modo-oscuro"><i class='fas fa-lightbulb'></i></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div id="wallpaper" class="col-10"></div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div id="info-principal" class="col-10" style="position:relative">
+            <div class="perfil" style="position: absolute; left:15px; top:-30px;">
+                <img class="imagen-de-perfil" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBYVFRgVEhUYGBgYGBgaGhkaGBoaGBgYGBgZGhwYGhgcJC4lHB4rHxoYJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHBISHjQhJCU0NDE0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQxNDQxNDQ0NDQxNDQ0NDQ0NDQ0NDE0NDE0P//AABEIARMAtwMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xAA/EAABAwIEAwUGBAUDAwUAAAABAAIRAyEEEjFBBVFhBiJxgZEHEzKhsfBSwdHhI0JicvEUM4KissIVJDRzkv/EABkBAAMBAQEAAAAAAAAAAAAAAAABAwIEBf/EACQRAQEAAgMBAAEDBQAAAAAAAAABAhEDEiExQSIyUQQTM2GR/9oADAMBAAIRAxEAPwDKowUiUAUNlgoSkhHKAOUYRShKAUCjBSAlBALRpKUEgNKaEhzgNeaTiK2VmZl7gRuZOyWWWmpjs8EYKj06sRMXUhyJlKLjYUEpISgmRSUEgFKCAUCjCSEYQRSUkowUGUggEEBRoIkaZDRykoIBUokSAQDjSlJpzwBdRMTipGVthzm5WbdHJs7iMYBMbb6nyCcwOIe60eM6gddgqynT0keDRqepKkvfaC4MaJsBy/yp5VTGJ+KqsIy5pIO1gTyvsoznwLOk8hooBxTG/CM3936DVH/6i4S4Hy0E+CWqe4sGUDIc8uHn/j0Tr3hvezW67+CpmY8nvOJMafmotXEuc6SfvkiSlbGibjoubidtuqnMeHCQZBWRpYkix0P7qQx5EEOjkfNbmVhWbamUoFVXDuIh9nWd8j0VmCtysFhGEkIwUApKCSCjBQCwgkyggKVAIIgmRSARIwgDKRUqBoJQqOgE8lUYrFZrbE/fgs2iQurii85dvp4pLmiPigb9f1+9VDLxoPkpuGwpcbkQdliqYzZ9uJIGWmOkxeOpTLsI43P34q/wfDCIMev7Kyp4EG0KdyWmDJM4YT6JxvCi7bTbn92W1w/DADNvl6JTsANxF7Hkl3p9IxDuEOmITJ4aQTZdGoYEaOF+ex/RCrwobj9Eu1PpK5jUwplCkyQQTGkclusbwZvI+ipcTwsCbQtdmbxs6+kW7W12j1V1wnHAjI90um08thPNV2IpuZqLba/JRn2Oaf2hUxySyx02KNQ8BiM7Ad9/FSgqJlowUlGCgFSgiCCAqEmUmUAmRSMFJlGCgI3EK2Vt9/oqR7gfhB81P4q/vERMGPCAExwqmXVWg6Zr25X/ACWN/lpYYfhoYO9rqTynRo69VoODcODrqtxAzPDToDJ6uJWs4SyGj781HO+L4T1Po4IQptDCN5IMcptBwUbXVJBswbeUeCN+CCl0inSE4VVYwl/p0S/9Nt0U4wNUmEqcQKuDB1AVXiuFjktE9RqwRsaYbivDBlMBYiuwSQBBGy63i6QMrmnGcMWVidtx06KmFQ5cfNmeC4rKcp0P3ZaAFZqowMqTPxQR4n97+avMI+W+C6Ma5rEqUoFNpQK0yUCiQlBAU8oApAKOUyKlG0pEowUgp8ZcknX9f8qx4fSgtfvM+QkKCRLiTzPzVuwZWg9J9b/mp1SQ/TAL52sfSy13DhLQVhMHWJNt3H0H+Vu+FO7oUc/i3H9Wkp2k4yksFk8xik6UujKktEJqiQpUWTgqPlm40R5SnNLDojQWzDpUWs5TXqLWEpNIFQLF9rMLo4a/otw8Qsv2nb3AeR+q3jfUs5vFicazuMdoRH0Mj6K04Y+WTzUSqMzA3XKL+ZNlJ4YyG+f0sujFyZJ8owUiUYKowcBQSJQQFIClApCAQRcpbNU0lNnZFBhtMT5meeqdxVWGgf0/QQiY68f3Eeub81F4mTInw9dvRSUSOGMJcABeZ8l0fhVCGiVj+yODzkvPNboENCll7XRhNRMpgDVPCozcqhqYpzu6w+JUHGGBNSq1viQPzWNKdmpGOpgxIUpnEGGwcuTYnGXhlTPB/lBj1NlLwHF3NN587fJProplt05uIBcL6j9EHV4JvyVRwp5eA4ckXG6hpML52WKp+Fg7iLAYc4AohjmE/EFzLH8Re82afGJUvhbnPP8AvNn8J/crfXxPtdugVmiJBlZ3tAzNTf0CIPqsubjpKVjH52P6j8kpNHbuMLQdBH9Vj5FT8J8PmT6lU12vHIOPyVzhj3QunBx5JEowUgFGCqMFyjSAUSApgjRBGEENLp6pCWwSQBvb1QcJZSgNJ3mJ8DB81ExveLXDnB+/BavivAiWvcCZY2w/tGgHkVk6bCHwfQ2KjMtrZ4ab3snTAZJsrXEuEESB1mx9NConAWZKYG6uRh2nUD0UcqvhPGQxz6h7lG17uiY++qit7NMcM1So/MdXTJ9Tot+zBNjTy2SXcLb+Fvp+SJlr4dwl+s1geH06bCxrg4Oic0OcYn9UGcHZqSSNhGngdVpm8Nb+EDwCKrRDdEXLZzGTyGuBUskjZP8AaHCipTg8wfQpeDbdScSJafBTb14xLuENhwdFwQ3kJ3A5qrr9nnFwl7MosAGZXBuYmJAub6k8ltxRD2xEwoj+Gt6+ElUmdid45ld1kqFStQeGvOdhtfUeq0GHgstoZU13DGOEObPj9Qm34MMFku2x1053jKQDnRs8/VT6I7o8FHxrD7xwAm5AHWSpIEWO1l04OXOFyjlIRqiRYKCSEEBTyjlICUEAoFP4M99n97f+4KOEpjoII1F/RBx1DFN7rvNZKvwMucah1gujoNAtThqoqMa7Z7Q4eMXCLGd1pJEd2P3XHPK9DL3FWcIqQ0g6gq/pVVnabgCY5QfEKdhq5Nk8olhl40VN6ktKqMNWtdTG11jWl5dxLcYCrKj8zoHqllznnk0fMqo43in0r02zIjzT1sVd4cZddU/jD3bLnuD4niMxOJaGgyWlpJjxCmYjtE4NJaC/oBcp3FmZNRhiQYO6lZQVnuz/ABB9cS9pZGx5q/ZUtfVZsax+FOb0UDHjulS6tWFS43Faok9GV1GRFBz8QYFhUB/46z8knHMy1Ht5Pd9VdcGpd97idZjl96qn4v8A79T+4/kujjvunJyY6xl/2jSjlNyjBVnOcBQSQUEBVhGkhPUaRcUAdKmXWAVsODuazO63RWuEwTMOz3lS52CrMTjnVDew2CxLbfPilxmM9+rvsvixHuX6CS38wr/E0S9pDTAjRc+oPIeCDEEX5KXV7bFksLCXB2XMIym8Sp54Xe4rx8k66qeWllnOvLgB4xfyS8M+4g6kk845XTGXUv1IneOZUWlUDXFxLoMgCbxzRfRPGtokwEbq8Hven3omsBUlvl5+CqeNYkscQLSNen6qWt1btqLr/wBSBmLAC36KFxHEZ+7eOnTZZ9mOYMoLx1G88lYUMS0iwkSdTHyWtaKbyM4mnJaxwzNJga2OkDdMUcIGkggtExraCrSnlMd0WM635xona7GGIZEWnMJQOlDhWKDBEzBM2VyzGtcdVma9RjbAxff6T96phmPgxMQfUHZKzZ9ri11d9tVm+I1LGNfl9/qrIV87JnZUNerNtLgT9ZRjC5Ml1wyjlpNm3d7x/wArJY2tne940c4keGyuuK8Uayl7lhlxsSNAN1m5VuPH7UObP5jPwVKMFIBRgqqBwFBJBQQEFjZKtcCAzvnyVl2m7JPwvfYc7Oe7f2VXReHsLZhw+aVOXV2PH45zyJNgmcO8A33Tb2wAnMEwPexp/mcB6lGtC227pxrDtdUvFaR97ffLHyXYqXYqg1ocXEWn4jEqu4h2MovId7wWFr73P6JU5Yq61O8ESIB0H1UCu0CDoZ2E2G0De6s+KMIaHAxa+ugNxbos+7FhxOYTFmgC88yVKerXxf4HFBsXm31ulYlrHvG958SOnmqJj3BphpgGD0jr9VJ4ViC52Y/vb6+SxY3MvGlp4dgEhjfRLp1mC2ltwIUGnirwbbxNz4hKxdLMNLdNQluxWVNcaDxDgyedgU0/BUOX/W6Pqspjs7SYmdtbDn4p/BU3uMiWg/cJ7P8Aub80uavB6btHENOrQbH1uPJU/EuDsYQWTaLEkn1KuacsEmSoXEqxLSeQnw1Wd21nK+ejqQ1kTbfxKqHHNmJHwnQeshIxWPluu49RooLK5uRvIn/PL9VbDFDPI2XSjlIlHKs5ypSgU3KsOCYdlSsxlQw0m6AhhBdUp9ksGdACfEoJbGx8MxoxWBmpBJYQfGLrkDjkeRyJHoV0bFY1mEwoYzXLHmuZPfJJO5la0UTPeSpGCs9h5Pb9VWsqQrThlNznjLeCPqkbrfFcM6vh2sY/KSBdZlnZmrIAqnXmf1T3aPivucO0h+U2A5noApvYWlUfS/1FYuh5mm0mCGA/Ef7vpHNOwplYrcRSBYQbwAfSx/JYXH0sj5bJbM6CLeGy6RxTDGk5w1ym3Vjt/vkstjcP8TNdx4HZcsvW12WTLGM9hcWMrm5jre+35eCs+F1mteCIuLE6DnMiFSY7CljiGC0+A+WtkjDYtzXAm0aXtI+9VTUqPsbfDNzOLj5W156bK0o1cpE6crff+FmOHcSDgcxMiNIAkxa1ynW49wfEwJgReBrJ57XWLipjnGjxGJpgw6PFFTe14BaPHks7jq4eyztdDbefvyUihxEMYN4AnqLflPol1b7zaVxB/dkTIm0mCszjcYGgtOpF/A8ufNXFbiTQ0l28kzsYGvX6wsnj6nvKgDbN8dLCTZaxx0lllv4mcM4bUxJ93RbOUnM/+WI580jE4Z1NxY8QW2+a33Y7Bvw7XMdAYbi177k7nRZbtZXa/EEs2F/FWmOkLluqYFBJlAFMFpTXRcJuUMyA13YXEu9+ZcSMh1JKNV/Y938Y3julBMmcxuPfVM1DPTYKPKRKOUGVKk4TFOY4OadFGYJRuCC2tWVX43E02VDZz2sAmwbNx53uu6UsK0Bob3QIsLCA3KAekRboF56wOJNKoyo3Vj2vHXKQYXobD1PeNY+m7uOaHaA5muba+2oPkmSJxjhxqslvxsBj+pp1b48lhMTQJcRMObcW1A2/KF033QzZ/wCaImToDOmm6peOcG95/EpAB4uW/j6jr9VHkw37FuLk1+mua18NnbB1JkxtKosbgIJNjGv6rV4ymQ4uFiLf26zbyUPEYXNfwm/VRl0vcZWMexzTLTHVOs4i8WJkb8z4q7qYGb5QbC35qBW4fPTy/NUmSWWCA7ibi4GdPyHL71T2G4g6do18zAExrqbJDOGF0/cKRgsAQ6CJOy1coUxptznPtNpPgYFvqVKwlINJe49f2TpoZbff7Kw4Rwv3xe3f3b3A9Qwlvzj5rO9tdesN4jtNXeIkC0WVQ58mTclNShKsgcBRym5RygFyhKRKAKAk4bEOYZaYKCZlBAQmidEtrOaXICQ5ybOynhNuS3uSCmCQV2H2V8XFTDnDuPfonu9WPMiPAyPRcfIVz2V4wcLiWVb5QctQc2OgO9LHxaEB3zENflPuyA7bNprvHSUshIweJFQF7QMhIyODgQ9pAOa2lyRHRAUWh5eB3nAAnmGzH1KAp+KcHp4gONMtbUBhxB7riNWvA0MRfVYvH8PdTcWPaWuGg2I5g76LpnumicoAzGTAAknc8zom8XhGVG5Kjcw2O7TzB2U8+OZexXDluPl+OUVad50t8/LdQ34YEwRHjy81teM9nHsBdS77Dc277fLfy9FnDRt8vRc9lx+urGzKbiup4WH3gqW7DgC1rG/VIaIO3r9Euo/MIaZS0PIq3UcziY1G61/Y/AEe8eRowierhAHp9VU4XCklrGDM9xgDnvPQBb3B8O9xQbTBBebudGrj05DTwCrxzd2lyXrNfy4U5uUlp1aS09CDBCJTe1mG9zjazRYF+ceDwHfUlV7Kkqzm2clCUSCDGjCSjQC5QSZQQDUpLkaBWmQBsEEimduR/dLQBIwgUSA6z7NeNZqBpky6kYLdyw/C8dRcHo0Ld4WoXsa9zQ0kaBwdF/xDVcG7I44UsSwvJDHkU3EEjLLhlfI5ODT4Su1MLmEvptn8bP8AyZ16INOxOHa9uV4kSDF9WmQbdU7KYwBzMzB5eCXGSACAT8MDlp5IOwrc4qXzBuSZMZZn4dNd0EfylUXFODtqZ3vZkLRLXs7xeMsnMyLmbcyrl+fM3K5oAPfBaSXCNAZtdPpWS/TxyuN3HMMfwt7IztsRLXRYg330PQ3TNDAucQym3M92gH1PIdV1CvhWvaWvAIOoK5qO2YwmIqUhhmOpsqOZna8ioQ0xJLpDjI0so3j1fvjpxzuU8nrZcB4GMOzM6DUcO87UD+lvT6qTUFgXkEtALnCzZAuROg1SuF8UZiafvaRBYT3SD3rASHt/lcDIjolVRbSZIEdCYJVpJJ458rbfXI/aphQ3EU3jV9Mg/wDB5g/9XyWJYVufaq8HE02fhogn/k9/6LCvEIZp9r04HKO0pbSg9nZRgpAKOUjLlBJBRIAkCjKEJsmmm5TgSXsB1TRY4fCfI/qmD6Tqm2OcdRHnqnEAsLuHZbin+rwrKkkPaPd1IMHO0AFwI0kEOHiuGhbb2Y8Y91iTRee5XAb0FRvwHpMub4kJCOnGj7vK+k+CYa5j3WqmOf47a7qdSLK2V+XvMJgGzmOIhwIHT9Qm3Ete0ZMwJMm0MgEgwdbgC3NIxbMrg9jg15sJMZ4vlI3tPgg1gWJqoXgtytDgXd4l0ZW8wIueiZwlVj3Z8sVGtyOBN2gmY5ETupZcmSJxniLcNQfWfoxpIH4nGzW+biB5rgVdxeXOcZc4lxPMkyT6rYe1jjDXVqWHYXSwZ6kOOXvfA0t0J1Pm1Y9hU8nZ/T46xt/lb9g+LPw+KAk+6eMr2fyzIDX9HDnykLsYBkyZE26CB63k+a492dwUkv8A6iPSF1XhtcljCRoCHGdMotbeVrH4hy/urkHtFrh/EKoH8jabD4hgd/5LMOEq57ZNIx+JzbvDvJzGkKoTSpMJSCCAEpQKShKAIuy+CNGggHCiQQQARORpDHagpgZQQRoABOUaha4OaYc0gtO4IMg+qbRtQHoPgvERicPSrjV7BmA2eLPH/wCgVL94xzsli9gDoi4BkBwPqudeyni96mFcbH+JT8RAeB5ZT5FdLpFI1ZicEGudVpnK8mS6bGABBB2gCyNmNDxneXMdTDi5gdDXSIuP5hy5FTsVQa5pY8S1wgjnOyrcbhCQSwNzQcszlnaYvCB9cg7ZcOcysKtQkvrOe90mY+GAOgmPJV9IrYe0rDuz0CI+BwJ6gtmAsYGGLuPrH0WK7uGfpjfdjMLnpTye4H0B+hWuw9EMbkzGHOsXOkyT8Mn5Dos77Mb4Z0kH+M+OcAM13Ov0WzfRlzQWBzfizGO69pGXunzuNIWp8cvJf1Vx72o4XJj80WfSYfNuZp+gWTXQvbDQirh382Pb6OB/MrnhTSo0EERQAQSSggFSjSJRICRKEpIKNMDTdQbjUfcJxBAJaZulJptjGxuPzCcKACAQRICw4NxF2HrMrMuWPBj8Q0c3zaSPNd2wGJZkY5rnvbUILXHvGHy8SdmgW6Lz20rrPsy4tnoGg496ibdWPJI9DmHokcb97ZF1Fe6LHffa3NOBkFzwXd4AQT3Rlm4GxM3Ud9UCGkiSCQJuQIkx5j1QI5/7Sv8Aco8sj/XMJWGeLLce0HMTScYyjO0c57pM9Ij5rD1rArF+u/h/ZG+9k0GhUkAltd+UxcZqdOYO0wuihch9lPEHCs+hmAa6XxElxDQ0gHaBB8iut5wBJIFwLnc6BOOTk/dXOfa80OpUHtcCG1HtMXvGkrmC697WaQ/0bSABFVug3dMlchWk6CIo0RTIhBBBAAoIIIB0JQQQQAQQQQDdbTzCWEEEAaIoIIA2rW+zqoRjaYBgOa8OHMBuaD5gHyQQQHZKrv4bjyafoVFrUxExcBwB3AMWQQSOML29/wBun/8AYf8AtKwOJ+EoILF+u/h/x/8AT3Yg/wDvaPV4B6h0tI8wSPNd3p4ZoYGhoytiBqBl01QQTjl5GX9qf/wHf3s+pXGAggtJUElyNBMiCggggAggggP/2Q==" alt="imagen de perfil">
+            </div>
+            <div class="col-9" id="datos">
+                <p>NOMBRE: ZACK EDWARD FINCHER</p>
+                <p>EDAD: 56</p>
+                <p>RESIDENCIA: LOS ANGELES</p>
+                <p>OCUPACIÓN: DIRECTOR</p>
+                <p>EMAIL: ZACKEF@HOTMAIL.COM</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div id="formacion" class="col-5">
+            <h5>FORMACIÓN:</h5>
+            <h6>1989</h6>
+            <p>Licenciatura en bellas artes en cine</p>
+            <p>Art center college of design, Pasadena, California</p>
+            <br>
+            <h6>1984</h6>
+            <p>Bachillerato de ciencias</p>
+            <p>Escuela Daycroft, Darien, Connecticut</p>
+        </div>
+        <div id="imagen1" class="col-5">
+            <img class="img-fluid" src="https://assets.cdn.moviepilot.de/files/2d82dfc02c81bdc4a78d0b4f802ef8254430b2fde538963c7482f67c6764/limit/320/212/Sucker-Punch-49.jpg" alt="Imagen dirigiendo">  
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div id="imagen2" class="col-5">
+        </div>
+        <div id="historia" class="col-5">
+            <h5>HISTORIA LABORAL:</h5>
+            <h6>1992-1994</h6>
+            <p>Industrial Light & Magic</p>
+            <p>Camarógrafo y asistente de fotografía</p>
+            <br>
+            <h6>1994-2001</h6>
+            <p>Director de publicidades para diversas marcas</p>
+            <br>
+            <h6>2004-Actualidad</h6>
+            <p>Warner Bros.</p>
+            <p>Director.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div id="Idioma" class="col-5">
+            <button type="button"><p id="texto-idiomas">IDIOMAS</p></button>
+        </div>
+        <div id="Aptitud" class="col-5">
+            <button type="button"><p id="texto-aptitudes">APTITUDES</p></button>
+        </div>
+    </div>
+    <div class="row">
+        <footer>   
+            <p>CONTACTO:</p>
+            <a href="https://www.facebook.com/groups/zacksnyder/"><img class="imagenfooter" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEU6VZ////82Up4zUJ1UbKx4ibswTpyMmsQ5V6EtTJupss8nSJnN0+WVosgqSpo4U56eqcyDksDj5vBwgbb3+PxFXqNabqt9jb3S2OhidbC9xdy3v9l0hLjZ3etLY6bq7fTEyt4dQpdJYqekrs2uttK97JEgAAADFUlEQVR4nO3c2XLiMBBAUUZmM3IsFsNgSIAk/P83TsLzjCNbI3c3de9rqlw+BV7VZDIhIiIiIiIiIiIiIiIiIlJeCM4VxbzsrJDey8G50s/3h91ss3jp7LdJYii8262rbfPr545eem/753y9qWJwjypzwqJuT7E6i0JX7459fOaEvn3r5zMmLPy5r8+W0L9Gn15MCkO9GuAzJHSh9xFoS1hcrsOAVoTzdsghaEhYTAcDbQjdfjjQhDAshx6DRoShrhKAFoR+nQI0ICzaJKABYZlyEFoQ1p9pQPVCd0m4UJgQ+lsiULvQXVKB2oW+1ysZg8KwTAYqF5ZpF3sDQr99cqFLvJ3RL0y+2usXDnw1Y0YYUh58TQiL3X8Aql57Kvschs3xdF/9pftC8fphj3vSalZ6X5tbA/axJ5rtzhdBem+HVEeeaKq55s+po1DHAW/vJj+/yfdifdxX1OYX9LuwjxIejH5Fv3LTGOBJ8eXup+KEH056P4cXJby+S+9mQlHCUy29mwlFCddz6d1MKEq4sXsmjRTOEGoOIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQR27+78qYucRX37GFR7Jrb65ddBQz1Hbv2sCjpSixvEcgEitlhcN+cNenRnZxagThm+wK6ghC4TXiEYSr8tmFwstvIwhb2XX+EYR72St+fmEj6htDuBW+a8svPArPauQXnp9e+CI8jZJfKP38mF8ofDnML2wuwsOn2YVX6ena7MKt9PRpduHt6YUr6eHM7MKF9HBmduGr9OvU7MKp9BR4bmEjDcwulJ9zzy2U/+1hbqH0s1N+4afsq8QRhPKT/LmFB+kb7+xC6Tua7ELhdacRhOLPTtmFCv7ZQOY14LP4xWISlh2FqFkM17UF8VPpF7Hjb3HTJl2nSwXAzp5jnqYrhAj1hxCh/hAi1B9ChPpDiFB/CBHqDyFC/SFEqD+ECPWHEKH+ECLUH0KE+kOIUH8IEeoPIUL9IUSoP4QI9YcQof4QItQfQoT6Q4hQfwgR6g8hQv0hRKg/hAj1hxCh/hAi1B9ChD36A+1ASVvVoq0WAAAAAElFTkSuQmCC"></a>
+            <a href="https://twitter.com/ZackSnyder"><img class="imagenfooter" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png"></a>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="js/javacv.js"></script>
+</body>
+</html>

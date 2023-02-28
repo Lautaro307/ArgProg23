@@ -1,0 +1,168 @@
+.linea{
+    height: 30px;
+    background-color: blue;
+}
+
+body{
+    background-color: white;
+    color: black;
+}
+
+.modo-oscuro{
+    background-color: black;
+    color:white;
+}
+
+#boton-modo-oscuro{
+    float: right;
+}
+
+#wallpaper{
+    border:4px solid black;
+    height: 120px;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8dcb95e4-24fe-4f0c-8a4a-e0814403088b/d57qye1-b8c79517-4349-418f-af91-46dd1f71ac89.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzhkY2I5NWU0LTI0ZmUtNGYwYy04YTRhLWUwODE0NDAzMDg4YlwvZDU3cXllMS1iOGM3OTUxNy00MzQ5LTQxOGYtYWY5MS00NmRkMWY3MWFjODkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.cU2PLkyhmcPpfcr9ALEObSuuVglc3qBsaL9B_0-ixgg');
+    background-size: cover;
+}
+
+#info-principal{
+    border-right: 4px solid black;
+    border-bottom: 4px solid black;
+    border-left: 4px solid black;
+}
+
+.perfil{
+    float:left;
+}
+
+.imagen-de-perfil{
+    min-width:200px;
+    height: 200px;
+    border-radius: 75px;
+    border: 4px solid gray;
+    margin-left:40px;
+}
+
+
+#datos{
+    float:right;
+}
+
+#datos p{
+    font-family: Calibri;
+    font-weight: 700;
+    font-size: x-large;
+    margin-bottom:8px;
+}
+
+#formacion{
+    border: 4px solid black;
+    margin-top: 20px;
+    padding-top:30px;
+    padding-left:20px;
+}
+
+h5{
+    font-family: Calibri;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+h6{
+    margin-top:12px;
+    margin-bottom:1px;
+    font-family: Arial;
+    font-size:x-large;
+}
+
+#formacion p{
+    margin-bottom:1px;
+    font-family: Arial;
+    font-size:x-large;
+}
+
+#imagen1{
+    margin-top:20px;
+    float:right;
+    padding-right: 0px;
+}
+
+#imagen1 img{
+    border:4px solid black;
+    float: right;
+    padding-right: 0px;
+    width: 700px;
+}
+
+.idiomas{
+    float:left;
+}
+
+#imagen2{
+    border:4px solid black;
+    margin-top:20px;
+    float:left;
+    background-image: url('https://topesdegama.com/app/uploads-topesdegama.com/2020/03/proyectores-2-1024x682.jpg');
+}
+
+#imagen2 img{
+    border:4px solid black;
+    float: left;
+    padding-left: 0px;
+    width: 570px;
+}
+
+#historia{
+    border: 4px solid black;
+    margin-top: 20px;
+    margin-right:20px;
+    margin-left: 10px;
+    padding-top:30px;
+    padding-left:20px;
+}
+
+#historia p{
+    margin-bottom:1px;
+    font-family: Arial;
+    font-size:x-large;
+}
+
+.col-5 button{
+    border:4px solid black;
+    margin-top:20px;
+    margin-bottom:60px;
+    font-family:  "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-size: xx-large;
+    background-color: goldenrod;
+    color:white;
+    border-radius: 15px;
+    width: 100%;
+    height:100%;
+}
+
+footer{
+    background-color: blue;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:40px;
+    width:100%;
+}
+
+footer p{
+    float:left;
+    color: #ffffff;
+    font-family:  "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-size: xx-large;
+    margin-left: 20px;
+}
+
+footer a{
+    float:left;
+}
+
+.imagenfooter{
+    max-width:30px;
+    max-height: 30px;
+    margin-top:10px;
+    margin-left:30px;
+}
